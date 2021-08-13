@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fabiano Braz</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/fbiano"><i class="fab fa-github fa-2x"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:fabianodias0@gmail.com"><i class="far fa-envelope fa-2x"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/fabianobraz/"><i
+                        class="fab fa-linkedin fa-2x"></i></a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Fabiano Braz</h1>
+                <h5>Desenvolvedor Full Stack Júnior</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Desenvolvido no treinamento dado pela Gama Academy! Adoro desafios! Quanto mais mergulho nesse mundo
+                    da programação mais me deparo com um universo repleto de oportunidades, após cursar Engenharia Civil
+                    estou dando braçadas longas a fim de ser um desenvolvedor. Não me intimida ter que mudar de área,
+                    pelo contrário, estou animado com a possibilidade de levar meus conhecimentos para o mundo da
+                    tecnologia. Daqui sigo aprendendo ...
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor e-mail:">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+    <footer>
+        <span>
+            Desenvolvido no treinamento dado pela Gama Academy - Start Tech.
+        </span>
+    </footer>
+</body>
+
+</html>
